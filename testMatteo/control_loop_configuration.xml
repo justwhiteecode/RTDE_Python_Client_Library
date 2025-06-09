@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rtde_config>
+	<!-- Output da monitorare -->
+	<recipe key="state">
+		<field name="actual_TCP_speed" type="VECTOR6D"/> <!-- Velocità punto centrale del robot-->
+		<field name="target_TCP_speed" type="VECTOR6D"/> <!-- Velocità a cui il sistema intende far muovere il punto centrale del robot-->
+	</recipe>
+
+	<!-- Input da inviare (braccio-pc) -->
+	<recipe key="setp">
+		<!--<field name="speed_slider_mask" type="UINT32"/> <!- Da settare ad 1 per usare speed_slider_fraction ->
+		<field name="speed_slider_fraction" type="DOUBLE"/> <!- Moltiplicatore da 0.0 ad 1.0 per la velocità -->
+	</recipe>
+</rtde_config>
+

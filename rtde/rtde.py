@@ -464,3 +464,16 @@ class RTDE(object):
     def skipped_package_count(self):
         """The skipped package count, resets on connect"""
         return self.__skipped_package_count
+
+
+
+
+def main():
+    client = RTDE
+    client.connect()
+    version = client.get_controller_version()
+    print(version)
+
+
+if __name__ == "__main__":
+    main()
